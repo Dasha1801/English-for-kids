@@ -1,0 +1,137 @@
+$switch-rounded: 26px;
+$font-weight-bold: 700;
+$border-radius: 3px;
+$white: #fff;
+$train: rgb(216, 16, 93);
+$play:rgba(130, 80, 180, 0.945);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.switch{
+  padding-top: 14px;
+}
+
+.toggle-switch-box {
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+  outline: 0;
+  overflow: hidden;
+
+  input {
+    display: none;
+
+    &:checked {
+
+      + .toggle-switch-item {
+
+        &::before {
+          left: 0;
+        }
+
+        &::after {
+          right: -100%;
+        }
+
+        .switch-button {
+          left: calc(100% - 23px);
+        }
+      }
+    }
+  }
+
+  .toggle-switch-item {
+    position: relative;
+    display: block;
+    min-width: 90px;
+    min-height: 36px;
+
+    &::before,
+    &::after,
+    .switch-button {
+      position: absolute;
+      top: 50%;
+      transform: translate3d(0, -50%, 0);
+    }
+
+    &::before,
+    &::after {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: $font-weight-bold;
+      color: $white;
+      line-height: 1;
+    }
+
+    &::before {
+      left: -100%;
+      padding: 0 23px 0 0;
+      background-color: transparent;
+      content: attr(data-tg-on);
+      transition: left .3s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    }
+
+    &::after {
+      right: 0;
+      padding: 0 0 0 23px;
+      background-color: #d0d4e7;
+      content: attr(data-tg-off);
+      transition: right .3s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    }
+
+    .switch-button {
+      left: 3px;
+      display: block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid transparent;
+      background-color: $white;
+      border-radius: 50%;
+      z-index: 1;
+      transition: left .3s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    }
+  }
+}
+
+.switch-rounded {
+  border-radius: $switch-rounded;
+}
+
+.switch-rectangular {
+  border-radius: $border-radius;
+
+  .toggle-switch-item {
+
+    .switch-button {
+      border-radius: $border-radius;
+    }
+  }
+}
+
+
+.switch-bg-success {
+
+  .toggle-switch-item {
+
+    &::before {
+      background-color: $train;
+    }
+    &::after {
+      background-color: $play;
+    }
+  }
+}
+
+
+
+
+

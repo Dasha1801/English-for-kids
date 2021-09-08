@@ -1,0 +1,33 @@
+.headerBack{
+  background-color: rgb(8, 141, 74);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 60px;
+  font-size: 18px;
+}
+.router{
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.rout{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+.logOut{
+  background-color: white;
+    color: #088d4a;
+    padding: 9px 20px;
+    font-weight: 700;
+    border-radius: 15px;
+    font-size: 18px;
+    border: none;
+
+}
+.word{
+  pointer-events: none;
+}

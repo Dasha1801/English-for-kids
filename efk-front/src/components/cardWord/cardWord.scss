@@ -1,0 +1,47 @@
+.boxWord{
+  box-sizing: border-box;
+  width: 280px;
+  height: 320px;
+  border: 3px solid rgb(73, 10, 133);
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px;
+  padding: 0 10px;
+
+
+  .deleteWord {
+    transform: rotate(45deg);
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 0;
+    cursor: pointer;
+  }
+  .delete {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .word{
+    margin: 35px 0 0;
+  }
+  .translation, .sound{
+    margin: 10px 0;
+  }
+  .change{
+    display: block;
+    margin: 10px auto;
+    background-color: #490a85;
+    color: white;
+    cursor: pointer;
+    padding: 6px 17px;
+    font-size: 16px;
+  }
+  .image{
+    width: 180px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+}

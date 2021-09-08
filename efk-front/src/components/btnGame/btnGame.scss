@@ -1,0 +1,30 @@
+.btnGame {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+  .start {
+    background: white;
+    border-radius: 26%;
+    font-size: 16px;
+    line-height: 20px;
+    color: #d8105d;
+    padding: 1.2%;
+    width: 20%;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid #d8105d;
+    display: none;
+  }
+  .repeat {
+    background-image: url(../../assets/repeat1.png);
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: center;
+    display: none;
+    width: 70px;
+    height: 70px;
+    border: none;
+  }
+}

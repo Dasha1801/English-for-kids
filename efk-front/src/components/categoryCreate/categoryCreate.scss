@@ -1,0 +1,35 @@
+.box {
+  box-sizing: border-box;
+  width: 300px;
+  height: 255px;
+  border: 3px solid rgb(16, 156, 86);
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px;
+  color: grey;
+
+  .name{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    color: gray;
+    border-bottom: 1px solid gray;
+  }
+
+.listBtn{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.btn{
+  color: white;
+  background-color: rgb(16, 156, 86);
+  padding: 8px 16px;
+  font-size: 18px;
+}
+}

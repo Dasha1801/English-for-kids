@@ -1,0 +1,46 @@
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+.body {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: "Varela Round", sans-serif;
+  background-image: url(./assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: calc(100% - 50px);
+}
+
+.bodyBack {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: "Varela Round", sans-serif;
+  height: calc(100% - 50px);
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 85px auto 0;
+}
+.star {
+  min-width: 46px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  display: inline-block;
+}
+.shadow {
+  max-width: 484px;
+  height: 100vh;
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.active {
+  border-bottom: 2px solid white;
+}

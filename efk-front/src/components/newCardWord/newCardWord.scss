@@ -1,0 +1,62 @@
+.boxWord {
+  box-sizing: border-box;
+  width: 280px;
+  height: 320px;
+  border: 3px solid rgb(73, 10, 133);
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px;
+  padding: 0 20px;
+  .newWord {
+    margin: 35px 0 0;
+  }
+
+  .newWord,
+  .newTranslation {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(83, 18, 121);
+    display: flex;
+    flex-direction: column;
+  }
+  .newTranslation,
+  .newSound {
+    margin: 15px 0;
+  }
+
+  .listBtn {
+    margin-top: 25px;
+  }
+  .newImg,
+  .newSound,
+  .listBtn {
+    display: flex;
+    justify-content: space-between;
+  }
+  .inputTranslation,
+  .inputWord {
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 2px;
+    font-size: 18px;
+  }
+
+  .select {
+    padding: 4px;
+    background-color: white;
+    border: 2px solid green;
+    color: green;
+  }
+  span {
+    font-weight: 600;
+  }
+  .btn {
+    background-color: white;
+    border: 2px solid #490a85;
+    color: #490a85;
+    padding: 8px 19px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

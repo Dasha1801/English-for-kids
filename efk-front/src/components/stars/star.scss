@@ -1,0 +1,10 @@
+.stars {
+  display: flex;
+    justify-content: flex-end;
+    width: 320px;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+    left: calc(50% - 160px);
+    z-index: 5;
+}
